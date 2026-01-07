@@ -14,7 +14,7 @@ Multi-tenant incident management system built with clean architecture.
 ### Dependency Flow
 
 ```
-UI → Actions → Use Cases → Entities 
+UI → Actions → Use Cases → Entities
 Gateways impl -> Entities
 Use cases access datbase via Gateways interfaces
 ```
@@ -117,9 +117,9 @@ Design tokens are used in two ways:
 
 ### When to Use Each Approach
 
-| Approach | Use When |
-|----------|----------|
-| MUI Theme (automatic) | Using standard MUI components that respect theme palette |
+| Approach                 | Use When                                                             |
+| ------------------------ | -------------------------------------------------------------------- |
+| MUI Theme (automatic)    | Using standard MUI components that respect theme palette             |
 | `useDesignTokens()` hook | Custom styles, computed colors (e.g., status-based), non-MUI styling |
 
 ### Example: MUI Theme (Automatic Styling)
@@ -181,7 +181,7 @@ export const tenant1Tokens: DesignTokens = {
     warning: '#FFAB00',
     error: '#FF5630',
   },
-}
+};
 ```
 
 ### DesignTokensProvider
@@ -232,7 +232,7 @@ export default function RootLayout({ children }) {
 
 ```typescript
 // packages/theme/tenants/tenant3.ts
-import { DesignTokens } from '../types'
+import { DesignTokens } from '../types';
 
 export const tenant3Tokens: DesignTokens = {
   name: 'Tenant 3',
@@ -240,19 +240,19 @@ export const tenant3Tokens: DesignTokens = {
     primary: '#FF5722',
     // ... other colors
   },
-}
+};
 ```
 
 2. Register it in `packages/theme/getTenantTheme.ts`:
 
 ```typescript
-import { tenant3Tokens } from './tenants/tenant3'
+import { tenant3Tokens } from './tenants/tenant3';
 
 const tenants: Record<string, DesignTokens> = {
   tenant1: tenant1Tokens,
   tenant2: tenant2Tokens,
   tenant3: tenant3Tokens,
-}
+};
 ```
 
 3. Add npm scripts to root `package.json`:
@@ -265,6 +265,10 @@ const tenants: Record<string, DesignTokens> = {
   }
 }
 ```
+
+### Anti-Patterns
+
+- **Low-level UI components directly aware of tenant** - This hurts composability and reusability, making components harder to reason with in isolation
 
 ## Testing
 
