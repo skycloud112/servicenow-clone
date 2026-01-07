@@ -1,0 +1,35 @@
+{
+  "name": "@repo/gateways",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./IncidentGateway": "./src/IncidentGateway/IncidentGateway.ts",
+    "./IncidentGatewayImpl": "./src/IncidentGateway/IncidentGatewayImpl.ts",
+    "./InMemoryIncidentGateway": "./src/IncidentGateway/inMemoryStores/InMemoryIncidentGateway.ts",
+    "./incidentGatewayTestUtils": "./src/IncidentGateway/incidentGatewayTestUtils.ts",
+    "./UserGateway": "./src/UserGateway/UserGateway.ts",
+    "./UserGatewayImpl": "./src/UserGateway/UserGatewayImpl.ts",
+    "./InMemoryUserGateway": "./src/UserGateway/inMemoryStores/InMemoryUserGateway.ts",
+    "./userGatewayTestUtils": "./src/UserGateway/userGatewayTestUtils.ts",
+    "./tableUtils/incidentUtils": "./src/tableUtils/incidentUtils.ts",
+    "./tableUtils/userUtils": "./src/tableUtils/userUtils.ts",
+    "./poolUtils": "./src/poolUtils.ts"
+  },
+  "scripts": {
+    "ts": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/pg": "^8.11.10",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  },
+  "dependencies": {
+    "@repo/entities": "workspace:*",
+    "@nearform/sql": "^1.10.1",
+    "pg": "^8.13.1"
+  }
+}

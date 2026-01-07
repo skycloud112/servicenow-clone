@@ -1,0 +1,19 @@
+{
+  "name": "@repo/entities",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./Incident": "./src/Incident/Incident.ts",
+    "./Incident.testUtils": "./src/Incident/Incident.testUtils.ts",
+    "./User": "./src/User/User.ts",
+    "./User.testUtils": "./src/User/User.testUtils.ts"
+  },
+  "scripts": {
+    "ts": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "typescript": "^5.7.2"
+  }
+}
