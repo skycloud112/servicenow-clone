@@ -3,10 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "exports": {
-    "./AppHeader": "./components/AppHeader.tsx",
-    "./IncidentStatusBadge": "./components/IncidentStatusBadge.tsx",
-    "./PriorityBadge": "./components/PriorityBadge.tsx",
-    "./IncidentCard": "./components/IncidentCard.tsx"
+    "./AppHeader": "./components/AppHeader/AppHeader.tsx",
+    "./IncidentStatusBadge": "./components/IncidentStatusBadge/IncidentStatusBadge.tsx",
+    "./PriorityBadge": "./components/PriorityBadge/PriorityBadge.tsx",
+    "./IncidentCard": "./components/IncidentCard/IncidentCard.tsx"
   },
   "scripts": {
     "ts": "tsc --noEmit",
