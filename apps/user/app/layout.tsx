@@ -3,7 +3,9 @@
 import React from 'react';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 import { ThemeProvider, CssBaseline } from '@mui/material';
-import { DesignTokensProvider, getTenantTokens, createMuiTheme } from '@repo/theme';
+import { DesignTokensProvider } from '@repo/theme/DesignTokensProvider';
+import { getTenantTokens } from '@repo/theme/getTenantTheme';
+import { createMuiTheme } from '@repo/theme/createMuiTheme';
 import { QueryProvider } from '@user/providers/QueryProvider';
 
 const tenantName = process.env.NEXT_PUBLIC_TENANT || 'tenant1';

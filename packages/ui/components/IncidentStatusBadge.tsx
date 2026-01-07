@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Chip } from '@mui/material';
-import { useDesignTokens } from '@repo/theme';
+import { useDesignTokens } from '@repo/theme/DesignTokensProvider';
 
 type IncidentStatus = 'new' | 'in_progress' | 'on_hold' | 'resolved' | 'closed';
 

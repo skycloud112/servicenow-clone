@@ -2,10 +2,11 @@
   "name": "@repo/theme",
   "version": "0.0.0",
   "private": true,
-  "main": "./index.ts",
-  "types": "./index.ts",
   "exports": {
-    ".": "./index.ts"
+    "./getTenantTheme": "./getTenantTheme.ts",
+    "./createMuiTheme": "./createMuiTheme.ts",
+    "./DesignTokensProvider": "./DesignTokensProvider.tsx",
+    "./types": "./types.ts"
   },
   "scripts": {
     "ts": "tsc --noEmit"

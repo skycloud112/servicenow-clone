@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { AppBar, Toolbar, Typography, Box } from '@mui/material';
-import { useDesignTokens } from '@repo/theme';
+import { useDesignTokens } from '@repo/theme/DesignTokensProvider';
 
 type AppHeaderProps = {
   appName: string;
