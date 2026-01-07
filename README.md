@@ -9,7 +9,7 @@ Multi-tenant incident management system built with clean architecture.
 - **Entities** (`packages/entities/`) - Domain models (Incident, User)
 - **Gateways** (`packages/gateways/`) - Data access with PostgreSQL + in-memory implementations
 - **Use Cases** (`apps/*/useCases/`) - Business logic classes
-- **UI** (`apps/*/`) - React components with Next.js
+- **UI** (`ui/*/`) - React components with Next.js
 
 ### Dependency Flow
 
