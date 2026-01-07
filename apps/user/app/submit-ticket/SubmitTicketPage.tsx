@@ -13,7 +13,7 @@ import {
   MenuItem,
   Alert,
 } from '@mui/material';
-import { AppHeader } from '@repo/ui';
+import { AppHeader } from '@repo/ui/AppHeader';
 import { useSubmitIncident } from './useCases/SubmitIncidentUseCase/useSubmitIncident';
 import type { IncidentPriority } from '@repo/entities/Incident';
 

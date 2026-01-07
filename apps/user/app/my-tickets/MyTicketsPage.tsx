@@ -2,7 +2,8 @@
 
 import React from 'react';
 import { Box, Typography, Container } from '@mui/material';
-import { AppHeader, IncidentCard } from '@repo/ui';
+import { AppHeader } from '@repo/ui/AppHeader';
+import { IncidentCard } from '@repo/ui/IncidentCard';
 import { useMyIncidents } from './useCases/GetMyIncidentsUseCase/useMyIncidents';
 
 export const MyTicketsPage = (): React.ReactElement => {

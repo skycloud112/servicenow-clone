@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Box, Typography, Container, Button, Stack } from '@mui/material';
-import { AppHeader } from '@repo/ui';
+import { AppHeader } from '@repo/ui/AppHeader';
 import Link from 'next/link';
 
 const HomePage = (): React.ReactElement => {

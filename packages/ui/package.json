@@ -2,10 +2,11 @@
   "name": "@repo/ui",
   "version": "0.0.0",
   "private": true,
-  "main": "./index.tsx",
-  "types": "./index.tsx",
   "exports": {
-    ".": "./index.tsx"
+    "./AppHeader": "./components/AppHeader.tsx",
+    "./IncidentStatusBadge": "./components/IncidentStatusBadge.tsx",
+    "./PriorityBadge": "./components/PriorityBadge.tsx",
+    "./IncidentCard": "./components/IncidentCard.tsx"
   },
   "scripts": {
     "ts": "tsc --noEmit"

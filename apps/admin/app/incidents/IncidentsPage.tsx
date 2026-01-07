@@ -2,7 +2,8 @@
 
 import React from 'react';
 import { Box, Typography, Container } from '@mui/material';
-import { AppHeader, IncidentCard } from '@repo/ui';
+import { AppHeader } from '@repo/ui/AppHeader';
+import { IncidentCard } from '@repo/ui/IncidentCard';
 import { useIncidents } from './useCases/GetIncidentsUseCase/useIncidents';
 
 export const IncidentsPage = (): React.ReactElement => {

@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Box, Typography, Container, Card, CardContent, Chip, Stack } from '@mui/material';
-import { AppHeader } from '@repo/ui';
+import { AppHeader } from '@repo/ui/AppHeader';
 import { useUsers } from './useCases/GetUsersUseCase/useUsers';
 
 export const UsersPage = (): React.ReactElement => {
