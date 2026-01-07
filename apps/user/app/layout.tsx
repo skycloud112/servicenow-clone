@@ -12,11 +12,7 @@ const tenantName = process.env.NEXT_PUBLIC_TENANT || 'tenant1';
 const tokens = getTenantTokens(tenantName);
 const muiTheme = createMuiTheme(tokens);
 
-type RootLayoutProps = {
-  children: React.ReactNode;
-};
-
-const RootLayout = ({ children }: RootLayoutProps): React.ReactElement => {
+const RootLayout = ({ children }: { children: React.ReactNode }): React.ReactElement => {
   return (
     <html lang="en">
       <body style={{ margin: 0 }}>

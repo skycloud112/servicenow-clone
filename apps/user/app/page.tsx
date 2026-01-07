@@ -3,7 +3,6 @@
 import React from 'react';
 import { Box, Typography, Container, Button, Stack } from '@mui/material';
 import { AppHeader } from '@repo/ui/AppHeader';
-import Link from 'next/link';
 
 const HomePage = (): React.ReactElement => {
   return (
@@ -17,10 +16,10 @@ const HomePage = (): React.ReactElement => {
           Submit and track your IT support requests
         </Typography>
         <Stack direction="row" spacing={2} justifyContent="center">
-          <Button variant="contained" component={Link} href="/submit-ticket" size="large">
+          <Button variant="contained" size="large" href="/submit-ticket">
             Submit Ticket
           </Button>
-          <Button variant="outlined" component={Link} href="/my-tickets" size="large">
+          <Button variant="outlined" size="large" href="/my-tickets">
             My Tickets
           </Button>
         </Stack>
