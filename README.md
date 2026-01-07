@@ -270,6 +270,29 @@ const tenants: Record<string, DesignTokens> = {
 
 - **Low-level UI components directly aware of tenant** - This hurts composability and reusability, making components harder to reason with in isolation
 
+## Storybook
+
+Visual testing with multi-tenant theme switching. Switch between tenants in the Storybook toolbar to see how components render with different design tokens.
+
+### Run Storybook
+
+```bash
+cd packages/ui && pnpm storybook
+```
+
+Opens at http://localhost:6006
+
+### Multi-Tenant Testing
+
+The Storybook toolbar includes a tenant switcher (paintbrush icon) that allows real-time switching between tenant themes. This enables visual testing of components across different tenant configurations without rebuilding.
+
+### Available Stories
+
+- **AppHeader** - Application header with tenant name display
+- **IncidentStatusBadge** - Status indicators (new, in_progress, on_hold, resolved, closed)
+- **PriorityBadge** - Priority indicators (critical, high, medium, low)
+- **IncidentCard** - Combined incident display card
+
 ## Testing
 
 - **Use case tests**: In-memory gateways (fast, isolated)

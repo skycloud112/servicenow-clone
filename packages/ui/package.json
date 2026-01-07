@@ -9,7 +9,9 @@
     "./IncidentCard": "./components/IncidentCard.tsx"
   },
   "scripts": {
-    "ts": "tsc --noEmit"
+    "ts": "tsc --noEmit",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@repo/theme": "workspace:*",
@@ -19,7 +21,11 @@
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
+    "@storybook/addon-essentials": "^8.6.0",
+    "@storybook/react": "^8.6.0",
+    "@storybook/react-vite": "^8.6.0",
     "@types/react": "^18.2.0",
+    "storybook": "^8.6.0",
     "typescript": "^5.7.2"
   },
   "peerDependencies": {
