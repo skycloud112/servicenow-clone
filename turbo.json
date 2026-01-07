@@ -12,8 +12,6 @@
     "ts": {
       "dependsOn": ["^build"]
     },
-    "test": {
-      "dependsOn": ["^build"]
-    }
+    "test": {}
   }
 }
