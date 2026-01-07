@@ -1,6 +1,6 @@
 import { Pool } from 'pg';
-import { createIncidentTable, deleteAllIncidents } from '../tableUtils/incidentUtils.js';
-import { createPool } from '../poolUtils.js';
+import { createIncidentTable, deleteAllIncidents } from '../tableUtils/incidentUtils';
+import { createPool } from '../poolUtils';
 
 export const setupIncidentTestDatabase = async (connectionString: string): Promise<Pool> => {
   const pool = createPool(connectionString);

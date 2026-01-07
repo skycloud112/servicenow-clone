@@ -1,7 +1,7 @@
 import type pg from 'pg';
 import SQL from '@nearform/sql';
 import { Incident, IncidentStatus, IncidentPriority } from '@repo/entities/Incident';
-import { INCIDENT_TABLE_NAME, IncidentTableFieldNames } from '../../../tableUtils/incidentUtils.js';
+import { INCIDENT_TABLE_NAME, IncidentTableFieldNames } from '../../../tableUtils/incidentUtils';
 
 type IncidentRow = {
   id: string;

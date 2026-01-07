@@ -1,14 +1,14 @@
 import { Pool } from 'pg';
 import { describe, it, expect, beforeAll, afterAll, beforeEach } from 'vitest';
 import { createDummyUser } from '@repo/entities/User.testUtils';
-import { TEST_DB_CONNECTION_STRING } from '../../../../utils/TEST_DB_CONNECTION_STRING.js';
+import { TEST_DB_CONNECTION_STRING } from '../../../../utils/TEST_DB_CONNECTION_STRING';
 import {
   setupUserTestDatabase,
   cleanupUserTestData,
   teardownUserTestDatabase,
-} from '../../../userGatewayTestUtils.js';
-import { createUser } from '../createUser.js';
-import { getUser } from '../../../query/impls/getUser.js';
+} from '../../../userGatewayTestUtils';
+import { createUser } from '../createUser';
+import { getUser } from '../../../query/impls/getUser';
 
 describe('createUser', () => {
   let pool: Pool;

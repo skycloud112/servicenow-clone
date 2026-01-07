@@ -1,5 +1,5 @@
 import type { Incident } from '@repo/entities/Incident';
-import type { InMemoryIncidentStore } from '../../inMemoryStores/InMemoryIncidentStore.js';
+import type { InMemoryIncidentStore } from '../../inMemoryStores/InMemoryIncidentStore';
 
 export const getIncidents = async (incidents: InMemoryIncidentStore): Promise<Incident[]> => {
   const result = Array.from(incidents.values());

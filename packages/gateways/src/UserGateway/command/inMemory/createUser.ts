@@ -1,5 +1,5 @@
 import { User } from '@repo/entities/User';
-import type { InMemoryUserStore } from '../../inMemoryStores/InMemoryUserStore.js';
+import type { InMemoryUserStore } from '../../inMemoryStores/InMemoryUserStore';
 
 export const createUser = async (users: InMemoryUserStore, user: User): Promise<void> => {
   const cloned = new User(

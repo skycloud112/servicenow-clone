@@ -1,7 +1,7 @@
 import type pg from 'pg';
 import SQL from '@nearform/sql';
 import { User, UserRole } from '@repo/entities/User';
-import { USER_TABLE_NAME, UserTableFieldNames } from '../../../tableUtils/userUtils.js';
+import { USER_TABLE_NAME, UserTableFieldNames } from '../../../tableUtils/userUtils';
 
 type UserRow = {
   id: string;

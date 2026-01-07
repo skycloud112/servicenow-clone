@@ -1,6 +1,6 @@
 import type pg from 'pg';
 import SQL from '@nearform/sql';
-import { INCIDENT_TABLE_NAME, IncidentTableFieldNames } from '../../../tableUtils/incidentUtils.js';
+import { INCIDENT_TABLE_NAME, IncidentTableFieldNames } from '../../../tableUtils/incidentUtils';
 
 type CountRow = {
   count: string;

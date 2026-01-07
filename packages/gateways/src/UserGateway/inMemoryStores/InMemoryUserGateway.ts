@@ -1,11 +1,11 @@
 import type { User } from '@repo/entities/User';
-import type { UserGateway } from '../UserGateway.js';
-import type { InMemoryUserStore } from './InMemoryUserStore.js';
-import { createUser } from '../command/inMemory/createUser.js';
-import { updateUser } from '../command/inMemory/updateUser.js';
-import { getUser } from '../query/inMemory/getUser.js';
-import { getUserByEmail } from '../query/inMemory/getUserByEmail.js';
-import { getUsers } from '../query/inMemory/getUsers.js';
+import type { UserGateway } from '../UserGateway';
+import type { InMemoryUserStore } from './InMemoryUserStore';
+import { createUser } from '../command/inMemory/createUser';
+import { updateUser } from '../command/inMemory/updateUser';
+import { getUser } from '../query/inMemory/getUser';
+import { getUserByEmail } from '../query/inMemory/getUserByEmail';
+import { getUsers } from '../query/inMemory/getUsers';
 
 export class InMemoryUserGateway implements UserGateway {
   private users: InMemoryUserStore = new Map();

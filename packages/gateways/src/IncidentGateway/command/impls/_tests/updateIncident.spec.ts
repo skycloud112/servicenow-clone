@@ -1,15 +1,15 @@
 import { Pool } from 'pg';
 import { describe, it, expect, beforeAll, afterAll, beforeEach } from 'vitest';
 import { createDummyIncident } from '@repo/entities/Incident.testUtils';
-import { TEST_DB_CONNECTION_STRING } from '../../../../utils/TEST_DB_CONNECTION_STRING.js';
+import { TEST_DB_CONNECTION_STRING } from '../../../../utils/TEST_DB_CONNECTION_STRING';
 import {
   setupIncidentTestDatabase,
   cleanupIncidentTestData,
   teardownIncidentTestDatabase,
-} from '../../../incidentGatewayTestUtils.js';
-import { createIncident } from '../createIncident.js';
-import { updateIncident } from '../updateIncident.js';
-import { getIncident } from '../../../query/impls/getIncident.js';
+} from '../../../incidentGatewayTestUtils';
+import { createIncident } from '../createIncident';
+import { updateIncident } from '../updateIncident';
+import { getIncident } from '../../../query/impls/getIncident';
 
 describe('updateIncident', () => {
   let pool: Pool;

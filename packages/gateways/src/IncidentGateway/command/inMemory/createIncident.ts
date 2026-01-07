@@ -1,5 +1,5 @@
 import { Incident } from '@repo/entities/Incident';
-import type { InMemoryIncidentStore } from '../../inMemoryStores/InMemoryIncidentStore.js';
+import type { InMemoryIncidentStore } from '../../inMemoryStores/InMemoryIncidentStore';
 
 export const createIncident = async (
   incidents: InMemoryIncidentStore,

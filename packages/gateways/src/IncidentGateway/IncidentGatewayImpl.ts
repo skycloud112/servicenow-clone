@@ -1,13 +1,13 @@
 import type pg from 'pg';
 import type { Incident } from '@repo/entities/Incident';
-import type { IncidentGateway } from './IncidentGateway.js';
-import { createIncident } from './command/impls/createIncident.js';
-import { updateIncident } from './command/impls/updateIncident.js';
-import { deleteIncident } from './command/impls/deleteIncident.js';
-import { getIncident } from './query/impls/getIncident.js';
-import { getIncidents } from './query/impls/getIncidents.js';
-import { getIncidentsByReporterId } from './query/impls/getIncidentsByReporterId.js';
-import { getNextIncidentNumber } from './query/impls/getNextIncidentNumber.js';
+import type { IncidentGateway } from './IncidentGateway';
+import { createIncident } from './command/impls/createIncident';
+import { updateIncident } from './command/impls/updateIncident';
+import { deleteIncident } from './command/impls/deleteIncident';
+import { getIncident } from './query/impls/getIncident';
+import { getIncidents } from './query/impls/getIncidents';
+import { getIncidentsByReporterId } from './query/impls/getIncidentsByReporterId';
+import { getNextIncidentNumber } from './query/impls/getNextIncidentNumber';
 
 export class IncidentGatewayImpl implements IncidentGateway {
   constructor(private pool: pg.Pool) {}

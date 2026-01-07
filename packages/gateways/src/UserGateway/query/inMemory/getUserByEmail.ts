@@ -1,5 +1,5 @@
 import type { User } from '@repo/entities/User';
-import type { InMemoryUserStore } from '../../inMemoryStores/InMemoryUserStore.js';
+import type { InMemoryUserStore } from '../../inMemoryStores/InMemoryUserStore';
 
 export const getUserByEmail = async (
   users: InMemoryUserStore,

@@ -1,7 +1,7 @@
 import type pg from 'pg';
 import SQL from '@nearform/sql';
 import type { User } from '@repo/entities/User';
-import { USER_TABLE_NAME, UserTableFieldNames } from '../../../tableUtils/userUtils.js';
+import { USER_TABLE_NAME, UserTableFieldNames } from '../../../tableUtils/userUtils';
 
 export const createUser = async (pool: pg.Pool, user: User): Promise<void> => {
   const query = SQL`

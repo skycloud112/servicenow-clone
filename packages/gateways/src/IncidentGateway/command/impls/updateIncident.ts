@@ -1,7 +1,7 @@
 import type pg from 'pg';
 import SQL from '@nearform/sql';
 import type { Incident } from '@repo/entities/Incident';
-import { INCIDENT_TABLE_NAME, IncidentTableFieldNames } from '../../../tableUtils/incidentUtils.js';
+import { INCIDENT_TABLE_NAME, IncidentTableFieldNames } from '../../../tableUtils/incidentUtils';
 
 export const updateIncident = async (pool: pg.Pool, incident: Incident): Promise<void> => {
   const query = SQL`
