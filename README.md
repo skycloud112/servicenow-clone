@@ -2,10 +2,6 @@
 
 Multi-tenant incident management system built with clean architecture.
 
-Merged from:
-- [todo-nextjs-clean-architecture](https://github.com/...) - Clean architecture patterns
-- [jira-clone-poc](https://github.com/...) - Multi-tenant theming system
-
 ## Architecture
 
 ### Clean Architecture Layers
@@ -18,7 +14,8 @@ Merged from:
 ### Dependency Flow
 
 ```
-UI → Actions → Use Cases → Gateways → Database
+UI → Actions → Use Cases → Entities 
+Use cases access datbase via Gateways interfaces
 ```
 
 ### Key Patterns
@@ -41,7 +38,7 @@ packages/
 ├── ui/                 # Shared UI components
 ├── theme/              # Multi-tenant theming
 ├── utils/              # Utility functions
-├── scripts/            # Database initialization
+├── scripts/            # Database initialization and migration
 └── typescript-config/  # Shared TS configs
 ```
 
@@ -66,7 +63,7 @@ packages/
 
 ```bash
 docker run -d \
-  --name servicenow-postgres \
+  --name postgres-postgres \
   -e POSTGRES_PASSWORD=test \
   -e POSTGRES_USER=testuser \
   -e POSTGRES_DB=testdb \
@@ -83,7 +80,7 @@ pnpm install
 
 ### 3. Configure environment
 
-Create `.env` in project root:
+Create `.env` in each app folder
 
 ```env
 POSTGRES_URL=postgresql://testuser:test@localhost:5432/testdb

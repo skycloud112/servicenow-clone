@@ -85,6 +85,34 @@ importers:
         specifier: ^2.1.8
         version: 2.1.9(@types/node@20.19.27)
 
+  apps/scripts:
+    dependencies:
+      '@repo/gateways':
+        specifier: workspace:*
+        version: link:../../packages/gateways
+      pg:
+        specifier: ^8.13.1
+        version: 8.16.3
+    devDependencies:
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../../packages/typescript-config
+      '@types/node':
+        specifier: ^20.11.24
+        version: 20.19.27
+      '@types/pg':
+        specifier: ^8.11.10
+        version: 8.16.0
+      dotenv:
+        specifier: ^16.4.5
+        version: 16.6.1
+      tsx:
+        specifier: ^4.19.0
+        version: 4.21.0
+      typescript:
+        specifier: ^5.7.2
+        version: 5.9.3
+
   apps/user:
     dependencies:
       '@emotion/react':
@@ -182,34 +210,6 @@ importers:
       vitest:
         specifier: ^2.1.8
         version: 2.1.9(@types/node@20.19.27)
-
-  packages/scripts:
-    dependencies:
-      '@repo/gateways':
-        specifier: workspace:*
-        version: link:../gateways
-      pg:
-        specifier: ^8.13.1
-        version: 8.16.3
-    devDependencies:
-      '@repo/typescript-config':
-        specifier: workspace:*
-        version: link:../typescript-config
-      '@types/node':
-        specifier: ^20.11.24
-        version: 20.19.27
-      '@types/pg':
-        specifier: ^8.11.10
-        version: 8.16.0
-      dotenv:
-        specifier: ^16.4.5
-        version: 16.6.1
-      tsx:
-        specifier: ^4.19.0
-        version: 4.21.0
-      typescript:
-        specifier: ^5.7.2
-        version: 5.9.3
 
   packages/theme:
     dependencies:
