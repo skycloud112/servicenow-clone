@@ -297,3 +297,20 @@ The Storybook toolbar includes a tenant switcher (paintbrush icon) that allows r
 
 - **Use case tests**: In-memory gateways (fast, isolated)
 - **Gateway tests**: Docker PostgreSQL (real SQL behavior)
+
+### Run Individual Test
+
+Add this keybinding to VS Code (`Cmd+Shift+P` → "Preferences: Open Keyboard Shortcuts (JSON)"):
+
+```json
+{
+    "key": "cmd+r",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+        "text": "TZ=UTC pnpm vitest run '${relativeFile}'\u000D"
+    },
+    "when": "editorTextFocus"
+}
+```
+
+Open a test file and press `Cmd+R` to run it in the terminal.
