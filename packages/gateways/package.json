@@ -23,13 +23,13 @@
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
-    "@types/pg": "^8.11.10",
-    "typescript": "^5.7.2",
-    "vitest": "^2.1.8"
+    "@types/pg": "^8.16.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.16"
   },
   "dependencies": {
+    "@nearform/sql": "^1.10.7",
     "@repo/entities": "workspace:*",
-    "@nearform/sql": "^1.10.1",
-    "pg": "^8.13.1"
+    "pg": "^8.16.3"
   }
 }

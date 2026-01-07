@@ -12,26 +12,26 @@
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^7.3.6",
     "@mui/material": "^7.3.6",
     "@mui/material-nextjs": "^7.3.6",
-    "@mui/icons-material": "^7.3.6",
     "@repo/entities": "workspace:*",
     "@repo/gateways": "workspace:*",
     "@repo/theme": "workspace:*",
     "@repo/ui": "workspace:*",
     "@repo/utils": "workspace:*",
-    "@tanstack/react-query": "^5.64.1",
-    "next": "^16.1.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "@tanstack/react-query": "^5.90.16",
+    "next": "^16.1.1",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
-    "@types/node": "^22.10.5",
-    "@types/react": "^19.0.2",
-    "@types/react-dom": "^19.0.2",
-    "typescript": "^5.7.2",
-    "vitest": "^2.1.8"
+    "@types/node": "^25.0.3",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.16"
   }
 }
