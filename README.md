@@ -277,7 +277,7 @@ Visual testing with multi-tenant theme switching. Switch between tenants in the 
 ### Run Storybook
 
 ```bash
-cd packages/ui && pnpm storybook
+pnpm storybook:ui
 ```
 
 Opens at http://localhost:6006

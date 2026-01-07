@@ -11,7 +11,8 @@
     "admin:tenant1": "NEXT_PUBLIC_TENANT=tenant1 turbo run dev --filter=admin",
     "admin:tenant2": "NEXT_PUBLIC_TENANT=tenant2 turbo run dev --filter=admin",
     "user:tenant1": "NEXT_PUBLIC_TENANT=tenant1 turbo run dev --filter=user",
-    "user:tenant2": "NEXT_PUBLIC_TENANT=tenant2 turbo run dev --filter=user"
+    "user:tenant2": "NEXT_PUBLIC_TENANT=tenant2 turbo run dev --filter=user",
+    "storybook:ui": "pnpm -F @repo/ui storybook"
   },
   "devDependencies": {
     "prettier": "^3.2.4",
